@@ -1,0 +1,57 @@
+.a{
+    width: 500px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;    
+}
+li{
+    transition: transform 1s;
+}
+.b{
+    width: 190px;
+    height: 500px;
+    background-color: green;
+    border: 2px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+img{
+    margin-bottom: 10px;
+}
+
+li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.c{
+     display: flex;
+    
+}
+table,th,tr,td{
+    /* border:green; */
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    /* background-color: lightgreen; */
+}
+.a{
+    background-image: url(/sports.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
+th{
+    background-color: darkgreen;
+    color: white;
+}
+td{
+    background-color: lightgreen;
+}
+
+
+

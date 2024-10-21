@@ -1,0 +1,10 @@
+.a{
+    background-color: whitesmoke;
+    border: 2px solid red;
+    width: 500px;
+    height: 20px; 
+    text-align: center; 
+}
+body{
+    background-color: greenyellow; 
+}

@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+fieldset{
+    border-color: blueviolet;
+    border-radius: 10px;
+}
+legend{
+    background-color: blueviolet;
+    color: white;
+}
+label{
+    color: white;
+}
+input{
+    background-color: black;
+}
+pre{
+    font-family: 'Times New Roman', Times, serif;
+}

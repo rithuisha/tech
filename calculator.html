@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            text-align: center;
+            border: 2px solid;
+            padding: 15px;
+            width: fit-content;
+            color: darkmagenta;
+            background-color: black;
+          
+        }
+        .cal{
+            display: grid;
+            grid-template-columns: repeat(4,65px);
+        }
+        input{
+            grid-column: span 4;
+            text-align: right;
+            border-radius: 66px;
+            background-color: blanchedalmond;
+            width: 250px;
+            height: 20px;
+        }
+        .eq{
+           grid-column: span 2;
+           background-color: aqua;
+        }
+        button{
+            border-radius: 90px;
+            background-color: blueviolet;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+        }
+        .clr{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="head">
+        <div class="cal"> 
+            <input type="text" id="sc">
+            <button onclick="display(1)">1</button>
+            <button onclick="display(2)">2</button>
+            <button onclick="display(3)">3</button>
+            <button onclick="display(4)">4</button> 
+            <button onclick="display(5)">5</button>
+            <button onclick="display(6)">6</button>
+            <button onclick="display(7)">7</button>
+            <button onclick="display(8)">8</button>
+            <button onclick="display(9)">9</button>
+            <button onclick="display(0)">0</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="displya('.')">.</button>
+            <button onclick="del()">Del</button>
+            <button onclick="cal()" class="clr">Clr</button>
+             <button onclick="Cal()" class="eq">=</button>
+        </div>
+    </div>
+</body>
+<script>
+    let screen = document.getElementById("sc")
+
+    function display(num){
+        screen.value += num
+    }
+    function cal(){
+        screen.value= eval(screen.value)
+    }
+    function Clr(){
+        screen.value=""
+    }
+    function del(){
+        screen.value=screen.value.slice(0,-1)
+    }
+</script>
+</html>
